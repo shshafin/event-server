@@ -3,7 +3,7 @@ import { Date, Types } from 'mongoose';
 export type TUser = {
   _id?: Types.ObjectId;
   image?: string;
-  role?: 'user' | 'admin';
+  role:
   email: string;
   password: string;
   createdAt?: Date;

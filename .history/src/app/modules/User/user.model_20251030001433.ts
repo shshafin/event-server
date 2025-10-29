@@ -8,7 +8,6 @@ const userSchema = new Schema<TUser>(
     image: { type: String },
     email: { type: String, required: true, unique: true },
     password: { type: String, required: true, select: 0 },
-    role: { type: String, enum: ['user', 'admin'], default: 'user' },
     passwordResetToken: { type: String },
     passwordResetExpires: { type: Date },
     googleId: {
