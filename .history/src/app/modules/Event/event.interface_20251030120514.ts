@@ -1,8 +1,8 @@
-import { Types } from 'mongoose';
+import { Types } from "mongoose";
 
 export interface IEvent {
   id?: string;
-  userId?: Types.ObjectId;
+  userId?:Types
   name: string;
   date: string;
   location: string;

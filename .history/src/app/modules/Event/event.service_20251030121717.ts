@@ -18,7 +18,7 @@ const createEvent = async (data: IEvent): Promise<IEvent> => {
 // GET all events
 const getAllEvents = async (): Promise<IEvent[]> => {
   try {
-    return await Event.find().populate('userId', 'username email').lean();
+    return await Event.find().populate.lean();
   } catch (error: any) {
     throw new AppError(
       500,
