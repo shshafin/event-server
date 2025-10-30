@@ -16,13 +16,13 @@ router.post(
 // Get all events
 router.get('/all', eventController.getAllEvents);
 
-// Search events by name & category
-router.get('/search', eventController.searchEventsByNameAndCategory);
-
 // Get single event by ID
 router.get('/:id', eventController.getEventById);
 
 // Get events by category
 router.get('/category/:category', eventController.getEventsByCategory);
+
+// Search events by name & category
+router.get('/search', eventController.searchEventsByNameAndCategory);
 
 export const EventRoutes = router;
