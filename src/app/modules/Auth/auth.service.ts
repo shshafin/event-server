@@ -276,8 +276,8 @@ const googleLogin = async (token: string) => {
   } catch (error) {
     throw new AppError(
       httpStatus.UNAUTHORIZED,
-      'Google authentication failed',
-      'Invalid or expired Google token',
+      `Google authentication failed - error: ${error}`,
+      `Invalid or expired Google token - error: ${error}`,
     );
   }
 };
