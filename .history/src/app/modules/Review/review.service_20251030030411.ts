@@ -15,14 +15,9 @@ const getReviewsByEvent = async (eventId: string) => {
   return reviews;
 };
 
-// get all reviews
-const getAllReviews = async () => {
-  const reviews = await Review.find().populate('userId', 'email username');
-  return reviews;
-};
+// get all re
 
 export const ReviewServices = {
   createReview,
   getReviewsByEvent,
-  getAllReviews,
 };

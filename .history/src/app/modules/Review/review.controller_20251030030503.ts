@@ -29,21 +29,9 @@ export const getReviewsByEvent: RequestHandler = async (req, res, next) => {
   }
 };
 
-export const getAllReviews: RequestHandler = async (req, res, next) => {
-  try {
-    const reviews = await ReviewServices.getAllReviews();
-    res.status(httpStatus.OK).json({
-      success: true,
-      message: 'All reviews fetched successfully!',
-      data: reviews,
-    });
-  } catch (error) {
-    next(error);
-  }
-};
+
 
 export const ReviewControllers = {
   createReview,
   getReviewsByEvent,
-  getAllReviews,
 };

@@ -17,7 +17,7 @@ const getReviewsByEvent = async (eventId: string) => {
 
 // get all reviews
 const getAllReviews = async () => {
-  const reviews = await Review.find().populate('userId', 'email username');
+  const reviews = await Review.find().populate('userId', 'email');
   return reviews;
 };
 

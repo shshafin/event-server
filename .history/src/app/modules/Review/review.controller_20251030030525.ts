@@ -45,5 +45,4 @@ export const getAllReviews: RequestHandler = async (req, res, next) => {
 export const ReviewControllers = {
   createReview,
   getReviewsByEvent,
-  getAllReviews,
 };
