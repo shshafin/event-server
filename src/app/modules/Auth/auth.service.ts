@@ -269,6 +269,7 @@ const googleLogin = async (token: string) => {
       user: {
         _id: user._id,
         email: user.email,
+        username: user.username,
         avatar: user.avatar,
       },
       accessToken,
